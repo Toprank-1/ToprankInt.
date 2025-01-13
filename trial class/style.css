@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+.title-box {
+    border: 2px solid white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.scarlet-text {
+    color: #FF2400; /* Scarlet color */
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 10px;
+    margin-top: 10px;
+    align-items: baseline;
+}
+
+.test-taker, .timer, .difficulty {
+    font-size: 16px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 300px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 2px;
+    font-size: 16px;
+    margin: 0;
+}
+
+button {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.question-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.question-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.question-box {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+#options-container {
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+#options-container label {
+    font-weight: normal;
+}
+
+#feedback-container {
+    margin-top: 20px;
+    display: none;
+    padding-left: 20px;
+}
+
+button#submit-btn {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+button#next-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    background-color: white;
+    color: #007bff;
+}
+
+button#next-btn:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #004494;
+}
+
+#detailed-breakdown {
+    margin-top: 20px;
+}
+
+#detailed-breakdown table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#detailed-breakdown th, #detailed-breakdown td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#detailed-breakdown th {
+    background-color: #f2f2f2;
+}
